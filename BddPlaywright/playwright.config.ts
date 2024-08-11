@@ -19,9 +19,9 @@ const testDir=defineBddConfig({
   importTestFrom:'steps/fixtures/fixture.ts',  
    });
 module.exports=defineConfig({
-  testDir,
+  testDir:'tests',
   
-  timeout: 60000*4,
+  timeout: 60000*8,
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */  

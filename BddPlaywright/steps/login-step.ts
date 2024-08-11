@@ -1,20 +1,10 @@
 import { createBdd } from "playwright-bdd";
-import {test} from './fixtures/fixture';
+import { test } from './fixtures/fixture1';
 const{Given, When, Then} = createBdd(test)
 
-Then('Login', async ({login}) =>
-{
-    
-    await login.login()
-    //await login.credential()
-    
-})
+Then('Loginwith', async ({ login }) => {
 
-Then('Credential', async ({login}) =>
-    {
-        
-        //await login.login()
-        await login.credential()
-        
-    })
-    
+    await login.login()
+
+
+})
